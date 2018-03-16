@@ -1,0 +1,71 @@
+<html>
+
+<head>
+     <meta charset="utf-8">
+	 <link rel="stylesheet" type="text/css" href="css/style.css"/>
+     <script type="text/javascript" src="script4.js"> </script>
+
+</head>
+
+<body>
+     <div>
+    <form name="formulaire">
+        <label for="produit"> Produit</label>
+	    <select name="produit" onchange=" javascript:afficherPrix();">
+	        <option value="745.32">Ordinateur</option>
+	        <option value="145.27">Imprimantes</option>
+	        <option value="52.99">Clavier</option>
+	        <option value="45.78">Souris</option>
+	
+	
+	    </select>
+	
+	  <p>
+        <label for="idPrix"> Prix du produit: </label>
+        <span id="idPrix" class="result">XXX<span>
+      </p>
+      <p>
+        <label for="Quantite"> Quantite </label>
+        <input type="text" name ="txtQuantite">
+
+        </p>
+       <p>
+        <label for ="idTotalAvantTaxe">Montant total avant taxe</label>
+        <span id="idTotalAvantTaxe"> XXX <span>
+       </p>
+       <p>
+         <label for ="idTps">Total tps</label>
+          <span id="idTps"> XXX <span>
+      </p>
+      <p>
+          <label for="idTvq">Total tvq </label>
+         <span id="idTvq"> XXX <span>
+      </p>
+      <p>
+         <label for="idTotalApresTaxe">Total apres taxes</label>
+         <span id="idTotalApresTaxe"> XXX </span>
+      </p>
+          <br> 
+       <input type="button" value="calculer" id="button" onclick="javascript:valider();">
+
+
+      </form>
+
+
+
+    </div>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

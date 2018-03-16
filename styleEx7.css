@@ -1,0 +1,14 @@
+# zoneAffichage{
+    color:bleu;
+    font-family: arial;
+    font-size: 12pt;
+    font-weight: bold;
+    display:none;
+}
+.classAffichage{
+    color:red;
+    font-family: verdana;
+    font-size: 10pt;
+    font-style: italic;
+    
+}

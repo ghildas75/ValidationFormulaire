@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title> Exercice 1 sur les formulaire</title>
+<script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+<form name="monFormulaire">
+<fieldset>
+<legend> Information client</legend>
+<p>
+<label>Nom:</label>
+<input type="text" name="txtNom" size="10">
+</p>
+<p>
+<label>Prenom:</label>
+<input type="text"  name="txtPrenom"size="10">
+</p>
+<p>
+<label>Code:</label>
+<input type="password" name ="txtCode">
+</p>
+</fieldset>
+<br>
+<textarea name ="txtCommentaire" cols="80" rows="10"  onclick="this.value='';"> Commentaire</textarea>
+<br><br><br>
+<input type="button" value="envoyer" onclick="javascript:valider();">
+</form>
+</body>
+
+</html>

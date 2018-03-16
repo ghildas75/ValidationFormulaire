@@ -1,0 +1,113 @@
+<html>
+ <head>
+ <title> exercice 10  </title>
+ <meta charset="utf-8">
+ <link rel="stylesheet" type="text/css" href="styleEx7.css" media="screen" title="style de bases">
+ <script type="text/javascript" src="script10.js"></script>
+ </head>
+ <body onload="chargerComboDate();">
+   <form name="formu">
+    <p>
+    <label for="idNom">Nom</lablel>
+    <input id="idNom" type="text" name="txtNom">
+    </p>
+    <p>
+    <label for="idPrenom">Prenom</lablel>
+    <input id="idPrenom" type="text" name="txtPrenom" >
+    </p>
+    <p>
+     
+     <label for="idAnnee">Date de naissance</label>
+     <select id="idAnnee" name="comboAnnee" onchange="selectionnerMoisAnnee();">
+      <option value="0"> annee</option>
+      </select>
+     <select name="comboMois" onchange="selectionnerMoisAnnee();">
+      <option value="0">mois</option>
+      
+     </select>
+     <select name="comboJour">
+      <option value="0"> jour</option>
+     </select>
+    </p>
+    <p>
+    <label for ="sexe">sexe</label>
+    <input type="radio" name="radiosexe" value="homme"> Homme
+     <input type="radio" name="radiosexe" value="femme" checked="checked"> Femme
+    </p>
+    <p>
+    <label> langue</label>
+    <input type="checkbox" name="chkFrancais" value="Francais ">Francais
+    <input type="checkbox" name="chkAnglais" value="Anglais ">Anglais
+    <input type="checkbox" name="chkAutre" value="Autre " onclick="activerAutre();"/>Autres
+    <input type="text" name="txtAutre" disabled="disabled">
+     </p>
+    
+    <p>
+      <label> ETAT CIVIL</label>
+      <select name="cboEtatCivil">
+        <option value="1">Marie(e)</option>
+        <option value="2">Celibataire</option>
+        <option value="3">Conjoint de fait</option>
+        <option value="4">Veuf(ve)</option>
+        <option value="5">Divorce</option>
+        </select>
+      <fieldset>
+        <legend>Adresse</legend>
+        <p>
+        
+        <label for="idApp">app</label>
+        <input  id ="idApp" type="text" name="txtApp" size="4">
+        <label for="idNumero">numero</label>
+        <input  id ="idNumero" type="text" name="txtNumero" size="10">
+        <label for="idRue">RUE</label>
+        <input  id ="idRue" type="text" name="txtRue" size="1">
+        
+      </p>
+    <p>
+        <label for="ville">Ville</label>
+        <input id="ville" type="text" name="txtVille">
+      <select id="idProvince" name="cboProvince">
+        <option value="0">choisir une province</option>
+        <option value="1">ALberata</option>
+        <option value="2">Colombie Britanique</option>
+        <option value="3">ILE PROVINCE EDOUARD</option>
+        <option value="4">MANITOBA</option>
+        <option value="5">Nouveau-Brunswisck</option>
+         <option value="6">Nouvelle  Ecosse</option>
+          <option value="7">Ontario</option>
+           <option value="8" selected="selected">Quebec</option>
+            <option value="9">SkatcheWan</option>
+            <option value="10">Terre Neuve Labrador</option>
+        
+      </select>
+      <label for="idCodePostale">Code Postale</label>
+      <input id="idCodePostale" type="text" name="txtCodePostale" size="8">
+        </p>
+      </fieldset>
+      <label for="idCommentaire">Vos Commentaire</label><br>
+      <textarea id="idCommentaire" cols="80" rows="10" name="txtCommentaire"></textarea></p>
+    <p>
+        <label for="idPhoto">Votre Photo</label>
+        <input id="idPhoto" type="file" name="txtPhoto">
+    </p>
+    <input type="button" value="enrigistrer" onclick="valider();">
+    <input type="reset" value="annuler">
+   </form>
+   <div id="zoneAffichage">
+    Nom et Prenom: <span id="AffichageNomPrenom" class="classAffichage">XXX</span><br>
+    Adresse:<span id="adresse" class="classAffichage">XXX</span><br>
+    Sexe: <span id="sexe" class="classAffichage">XXX</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    Etat civil: <span id="idAffichageEtatCivil" class="classAffichage">XXX</span><br>
+    Langue Parlees: <span id="parler" class="classAffichage">XXX</span><br>
+    Votre COmmentaire: <span id="idAffichageCommentaire" class="classAffichage">XXX</span><br>
+    Votre photo:
+    <br>
+    <img id="photo"/>
+   </div>
+   
+   
+ </body>
+    
+    
+    
+</html>

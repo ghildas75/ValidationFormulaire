@@ -1,0 +1,62 @@
+<head>
+     <meta charset="utf-8">
+	 <link rel="stylesheet" type="text/css" href="css/style.css"/>
+     <script type="text/javascript" src="script6.js"> </script>
+
+</head>
+
+<body>
+     <div class="cont">
+    <form name="formulaire">
+        <label for="produit"> Produit</label>
+	    <select name="produit" onchange=" javascript:afficherPrix();">
+		    <option> Selectionner un produit</option>
+	        <option value="745.32">Ordinateur</option>
+	        <option value="145.27">Imprimantes</option>
+	        <option value="52.99">Clavier</option>
+	        <option value="45.78">Souris</option>
+	
+	
+	    </select>
+	
+	  <p>
+        <label for="idPrix"> Prix du produit: </label>
+        <span  id="idPrix">XXX<span>
+      </p>
+      <p>
+        <label for="Quantite"> Quantite </label>
+        <input type="text" name ="txtQuantite">
+     </p>
+	 
+	 <table id="table">
+	   <tr>
+	   <td>Produit</td>
+	   <td>Prix</td>
+	   <td>Quantite</td>
+	   </tr>
+	 </table>
+	 
+       
+       <input type="button" value="ajouter" onclick="javascript:valider();">
+
+
+      </form>
+
+    </div>
+
+   
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

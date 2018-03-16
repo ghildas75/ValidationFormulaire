@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title> ex11</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="script11V2.js"></script>
+    </head>
+    <body>
+       <form name="formu">
+        <p>
+        <label for="dept">Departement</label>
+          <select name="comboDept" id="dept" onchange="afficherDisciplines();">
+         <option value="0">Choisir un departement</option>
+         
+         <option> Science Administrative </option>
+         <option>Medecine</option>
+         </select>
+        </p>
+        <p>
+        <label for="discipline"> discipline</label>
+        <select id="discipline" name="comboDiscipline" onchange="afficherEtudiants();">
+             <option> discipline</option>
+        </select>
+        </p>
+        <p>
+        <label for="etudiant"> discipline</label>
+        <select id="etudiant"  name="comboEtudiant"  onchange="activerPaiement();">
+             <option> Choisir un etudiant</option>
+        </select>
+        </p>
+        <p>
+        <label> Cout de la session</label>
+          <span id="coutSession">XXX</span>
+        </p>
+         
+         Paiement <input type="text" name="txtPaiement" disabled="disabled" onchange="calculerSolde();">
+          <br>
+          <label> Solde</label>
+          <span id="solde">xxx</span>
+          <br>
+          <input type="button" value="Afficher" onclick="afficherFacture();">
+        
+        
+        
+</form> 
+        
+        
+        
+        
+        
+        
+        
+    </body>
+    
+</html>

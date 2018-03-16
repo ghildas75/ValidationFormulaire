@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title> ex13</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="script13.js"></script>
+    </head>
+    <body>
+       <form name="formu">
+        <p>
+       Departement
+          <select name="comboDept"  onchange="afficherDisciplines();">
+         <option value="0">Choisir un departement</option>
+         
+         <option> Science Administrative </option>
+         <option>Medecine</option>
+         </select>
+        </p>
+        <p>
+        Discipline
+        <select  name="comboDiscipline" onchange="afficherEtudiants();">
+            
+        </select>
+        </p>
+        <br><br>
+      Liste Etudiants
+        <select   name="comboEtudiant"  onchange="activerPaiement();">
+           
+        </select>
+        
+        <br><br>
+         Cout de la session
+          <span id="coutSession">XXX</span>
+        </p>
+         
+         Paiement <input type="text" name="txtPaiement" disabled="disabled" onchange="calculerSolde();">
+          <br>
+          <label> Solde</label>
+          <span id="solde">xxx</span>
+          <br>
+          <input type="button" value="Afficher" onclick="afficherFacture();">
+        
+        
+        
+</form> 
+        
+        
+        
+        
+        
+        
+        
+    </body>
+    
+</html>

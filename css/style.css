@@ -1,0 +1,37 @@
+div,fieldset{
+    padding:15px;
+	border: 2px solid #FF00BB;
+	width:250px;
+	border-radius:20px;
+	margin:20px;
+	opacity:.8;
+	
+	
+}
+span{
+	color: blue;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+}
+#button{
+
+color:white;
+text-align:center;
+border-color:#1486f9;
+background:#1993fb;
+border-radius:10px;	
+padding:10px;
+margin-left:60px;
+
+}
+
+.cont{
+	float:left;
+	overflow-y:scroll;
+}
+td{
+	
+border:1px solid black;
+}
+

@@ -1,0 +1,59 @@
+<html>
+   <head>
+    <link rel="stylesheet" type="text/css" href="style14.css" media="screen" title="styles de bases">
+    <script type="text/javascript" src="script14.js"></script>
+   </head> 
+  <body>
+  <table border="1" width="85%">
+    
+    <tr onclick="selectionnerProduit(this);">
+        <th>Produit</th>
+        <th>Quantite</th>
+        <th>Prix</th>
+    </tr>
+    <tr onclick="selectionnerProduit(this);">
+        <td>Ordinateur</td>
+        <td>25</td>
+        <td>85$</td>
+    </tr>
+    <tr onclick="selectionnerProduit(this);">
+        <td>Ecran</td>
+        <td>45</td>
+        <td>85$</td>
+    </tr>
+    
+    <tr onclick="selectionnerProduit(this);">
+        <td>clavier</td>
+        <td>225</td>
+        <td>35$</td>
+    </tr>
+    </table>
+  
+  
+  <form name="formulaire">
+   <p>
+      <label for="idProduit">Produit</label>
+      <input id="idProduit" type="text" name="txtProduit" disabled="disabled">
+      
+   </p>
+   
+   <p>
+      <label for="idQuantite">Quantite</label>
+      <input id="idQuantite" type="text" name="txtQuantite" size="10" disabled="disabled">
+       </p>
+   <p>
+      <label for="idPrix">Prix</label>
+      <input id="idPrix" type="text" name="txtPrix" disabled="disabled">
+      
+   </p>
+   <input type="button" name="btnModifier" value="modifier" disabled="disabled" onclick="modifier();">
+   <input type="button" name="btnAnnuler" value="Annuler" onclick="nettoyer();">
+  </form>
+    
+    
+    
+  </body>  
+    
+    
+    
+</html>

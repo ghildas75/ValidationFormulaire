@@ -1,0 +1,70 @@
+<html>
+
+<head>
+<script type="text/javascript" src="script3.js"> </script>
+
+</head>
+
+<body>
+<form name="formulaire">
+    <label for="produit"> produit</label>
+	<select name="produit" onchange=" javascript:afficherPrix();">
+	<option value="745.32">ordinateur</option>
+	<option value="145.27">imprimantes</option>
+	<option value="52.99">clavier</option>
+	<option value="45.78">souris</option>
+	
+	
+	</select>
+	
+	<p>
+    <label for="prix"> prix du produit </label>
+    <input type="text" name ="txtPrix" disabled="disabled">
+    </p>
+   <p>
+  <label for="Quantite"> Quantite </label>
+   <input type="text" name ="txtQuantite">
+
+     </p>
+    <p>
+        <label for ="total avant taxe">Montant total avant taxe</label>
+       <input type="text" name ="txtTotalAvantTaxe" disabled="disabled">
+    </p>
+    <p>
+<label for =" TPS">Total TPS</label>
+<input type="text" name ="txtTotalTps"  size="10"disabled="disabled">
+</p>
+<p>
+<label for="TVQ">Total TVQ </label>
+<input type="text" name ="txtTotalTvq" size="10" disabled="disabled">
+</p>
+<p>
+<label for="total apres taxe">Total apres taxes</label>
+<input type="text" name ="txtTotalApresTaxe" size="10" disabled="disabled">
+</p>
+<br> <br>
+
+<input type="button" value="envoyer" onclick="javascript:valider();">
+
+
+
+</form>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

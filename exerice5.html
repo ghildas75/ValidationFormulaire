@@ -1,0 +1,37 @@
+<html lang="fr-FR">
+<head>
+     <meta charset="utf-8">
+	 <link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script src="script5.js"></script>
+
+</head>
+<body>
+   <form name="formulaire">
+     <fieldset>
+       <legend>Calcul de paie</legend>
+       <label>Poste</label>
+        <select name="employe" onchange="afficherSalaire();">
+         <option value="12.25">Caissier</option>
+         <option value="15.35">Vendeur</option>
+         <option value="33.55">Gérant</option>
+        </select>
+		<p>
+        <label for="Taux">Taux horaire: </label>
+        <span  id="Taux" > XXX</span>
+		</p>
+		<p>
+        <label for="idNbreHeure">Nombre heure hebdomadaire</label>
+        <input  type="text" name="idNbreHeure" size="10">
+		</p>
+		<p>
+		<label for="idPaieBrut">Salaire Brut:</label>
+        <span  id="idPaieBrut">XXX</span>
+		<p>
+		<br><br><br>
+		<input type="button" value="calculer" onclick="valider();">
+
+</fieldset>
+</form>
+</body>
+
+</html>
